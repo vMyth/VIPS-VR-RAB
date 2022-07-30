@@ -13,12 +13,15 @@ public class PlayerController : MonoBehaviour
 
     public TextMeshProUGUI countText;
     public TextMeshProUGUI winText;
+    public TextMeshProUGUI uNameText;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
         DisplayText();
+
+        uNameText.text = "Welcome " + PlayerPrefs.GetString("uname");
     }
 
     private void FixedUpdate()
