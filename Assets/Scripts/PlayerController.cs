@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour
 
     private int count;
 
-    public TextMeshProUGUI countText;
-    public TextMeshProUGUI winText;
-    public TextMeshProUGUI uNameText;
+    //public TextMeshProUGUI countText;
+    //public TextMeshProUGUI winText;
+    //public TextMeshProUGUI uNameText;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         DisplayText();
 
-        uNameText.text = "Welcome " + PlayerPrefs.GetString("uname");
+        //uNameText.text = "Welcome " + PlayerPrefs.GetString("uname");
     }
 
     private void FixedUpdate()
@@ -47,11 +47,11 @@ public class PlayerController : MonoBehaviour
 
     void DisplayText()
     {
-        countText.text = "Count: " + count.ToString();
+        //countText.text = "Count: " + count.ToString();
 
-        if (count == 10)
-        {
-            winText.gameObject.SetActive(true);
-        }
+        //if (count == 10)
+        //{
+        //    winText.gameObject.SetActive(true);
+        //}
     }
 }
